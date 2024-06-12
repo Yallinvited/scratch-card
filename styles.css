@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.scratch-card-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden; /* Ensures the canvas doesn't overflow its container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underneath-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#scratch-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the canvas covers the entire width of its container */
+    height: 100%; /* Ensures the canvas covers the entire height of its container */
+    cursor: pointer;
+}
